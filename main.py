@@ -36,6 +36,7 @@ else:
     print('[✅] | Press "q" for toggle.')
 telegram_window = check[0]
 paused = True
+play_again = 0
 
 while True:
     if keyboard.is_pressed('q'):
@@ -71,7 +72,8 @@ while True:
     if pixel_found:
         break
 
-    # click(width, height - 101)  # Press "Play again"
+    if play_again == 50:
+        click(width, height - 101)  # Press "Play again"
 
     for x in range(0, width, 20):
         for y in range(0, height, 20):
