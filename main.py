@@ -1,4 +1,3 @@
-from pyautogui import *
 import pywinctl as wc
 import pyautogui
 import time
